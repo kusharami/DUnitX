@@ -1,0 +1,81 @@
+package DUnitX_FMX;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DUNITX-DEBUG}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  fmx;
+
+contains
+  DUnitX.Assert,
+  DUnitX.Attributes,
+  DUnitX.Banner,
+  DUnitX.CategoryExpression,
+  DUnitX.Constants,
+  DUnitX.DUnitCompatibility,
+  DUnitX.Extensibility,
+  DUnitX.Extensibility.PluginManager,
+  DUnitX.FilterBuilder,
+  DUnitX.Filters,
+  DUnitX.FixtureProviderPlugin,
+  DUnitX.FixtureResult,
+  DUnitX.Generics,
+  DUnitX.Init,
+  DUnitX.InternalInterfaces,
+  DUnitX.IoC,
+  DUnitX.Loggers.GUIX {DesktopGUITestRunner},
+  DUnitX.Loggers.MobileGUI {MobileGUITestRunner},
+  DUnitX.Loggers.Null,
+  DUnitX.Loggers.Text,
+  DUnitX.Loggers.XML.NUnit,
+  DUnitX.Loggers.XML.xUnit,
+  DUnitX.MemoryLeakMonitor.Default,
+  DUnitX.OptionsDefinition,
+  DUnitX.ResStrs,
+  DUnitX.RunResults,
+  DUnitX.StackTrace.EurekaLog7,
+  DUnitX.StackTrace.JCL,
+  DUnitX.StackTrace.MadExcept3,
+  DUnitX.StackTrace.MadExcept4,
+  DUnitX.Test,
+  DUnitX.TestFixture,
+  DUnitX.TestFramework,
+  DUnitX.TestNameParser,
+  DUnitX.TestResult,
+  DUnitX.TestRunner,
+  DUnitX.Types,
+  DUnitX.Utils,
+  DUnitX.Utils.XML,
+  DUnitX.WeakReference,
+  DUnitX.CommandLine.OptionDef,
+  DUnitX.CommandLine.Options,
+  DUnitX.CommandLine.Parser,
+  DUnitX.ConsoleWriter.Base;
+
+end.
